@@ -6,13 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2DA5A5532EDE3BCE00304E18 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2DA5A5522EDE3BCE00304E18 /* FirebaseAuth */; };
+		2DA5A5552EDE3BCE00304E18 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2DA5A5542EDE3BCE00304E18 /* FirebaseFirestore */; };
+		2DA5A5572EDE3BCE00304E18 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2DA5A5562EDE3BCE00304E18 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		2DA5A52C2EDE399500304E18 /* PocketCloset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketCloset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2DC688B12EE2C8CE0092214C /* Exceptions for "PocketCloset" folder in "PocketCloset" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2DA5A52B2EDE399500304E18 /* PocketCloset */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2DA5A52E2EDE399500304E18 /* PocketCloset */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2DC688B12EE2C8CE0092214C /* Exceptions for "PocketCloset" folder in "PocketCloset" target */,
+			);
 			path = PocketCloset;
 			sourceTree = "<group>";
 		};
@@ -23,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA5A5532EDE3BCE00304E18 /* FirebaseAuth in Frameworks */,
+				2DA5A5552EDE3BCE00304E18 /* FirebaseFirestore in Frameworks */,
+				2DA5A5572EDE3BCE00304E18 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +87,9 @@
 			);
 			name = PocketCloset;
 			packageProductDependencies = (
+				2DA5A5522EDE3BCE00304E18 /* FirebaseAuth */,
+				2DA5A5542EDE3BCE00304E18 /* FirebaseFirestore */,
+				2DA5A5562EDE3BCE00304E18 /* FirebaseStorage */,
 			);
 			productName = PocketCloset;
 			productReference = 2DA5A52C2EDE399500304E18 /* PocketCloset.app */;
@@ -94,6 +119,9 @@
 			);
 			mainGroup = 2DA5A5232EDE399500304E18;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2DA5A5512EDE3BCE00304E18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2DA5A52D2EDE399500304E18 /* Products */;
 			projectDirPath = "";
@@ -256,11 +284,13 @@
 				DEVELOPMENT_TEAM = P7G384DQD6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PocketCloset/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PocketCloset;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -288,11 +318,13 @@
 				DEVELOPMENT_TEAM = P7G384DQD6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PocketCloset/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PocketCloset;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,6 +364,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DA5A5512EDE3BCE00304E18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DA5A5522EDE3BCE00304E18 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DA5A5512EDE3BCE00304E18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2DA5A5542EDE3BCE00304E18 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DA5A5512EDE3BCE00304E18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2DA5A5562EDE3BCE00304E18 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DA5A5512EDE3BCE00304E18 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2DA5A5242EDE399500304E18 /* Project object */;
 }
