@@ -5,12 +5,9 @@ PocketCloset is an iOS app that lets users digitize their wardrobe, organize clo
 
 ## Features
 - Sign up & Login
-- Add Clothing Items
-  Upload images from your photo library, name the clothing item, and categorize it
-- Outfit Builder
-  View all closet items and combine them into outfits, using an intuitive visual layout
-- Edit & Delete Items
-  Update or remove clothing pieces from your closet at any time
+- Add Clothing Items: Upload images from your photo library, name the clothing item, and categorize it
+- Outfit Builder: View all closet items and combine them into outfits, using an intuitive visual layout
+- Edit & Delete Items: Update or remove clothing pieces from your closet at any time
 - Real-time data syncing
 
 ## Tech Stack
