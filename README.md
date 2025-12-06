@@ -3,6 +3,8 @@ A virtual closet & outfit-building app built in SwiftUI (iOS) with Firebase back
 
 PocketCloset is an iOS app that lets users digitize their wardrobe, organize clothing pieces, and build outfits virtually. The project is built using SwiftUI, MVVM architecture, and Firebase (Auth, Firestore, Storage). Users can upload photos from their photo library, categorize items, browse their closet, and assemble outfits in a clean, modern UI.
 
+[![Watch the walkthrough]](https://youtu.be/-KSkRFNloK4)
+
 ## Features
 - Sign up & Login
 - Add Clothing Items: Upload images from your photo library, name the clothing item, and categorize it
